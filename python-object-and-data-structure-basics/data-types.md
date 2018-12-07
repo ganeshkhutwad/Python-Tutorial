@@ -1,4 +1,4 @@
-**Data Types**
+# Data Types
 
  - Integers (int):							Whole numbers: 10
  - Floating point (float):				Numbers with decimal point: 10.40
