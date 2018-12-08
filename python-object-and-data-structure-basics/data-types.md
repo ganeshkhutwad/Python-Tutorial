@@ -54,37 +54,37 @@ This has to do with floating point accuracy and computer's abilities to represen
 | index: | 0 | 1 | 2 | 3 | 4 |
 | reverse index: | 0 | -4 | -3 | -2 | -1 |
 
- 1. Slicing allows you to grab a subsection of multiple characters, a "slice" of the string.
- 2. `syntax: [start:stop:step]`
- 3. **start** is numerical index for the slice start
- 4. **stop** is the index you will go up to (but not include)
- 5. **step** is the size of the "jump" you take.
+ - Slicing allows you to grab a subsection of multiple characters, a "slice" of the string.
+ - `syntax: [start:stop:step]`
+ - **start** is numerical index for the slice start
+ - **stop** is the index you will go up to (but not include)
+ - **step** is the size of the "jump" you take.
 
 **Indexing and Slicing with Strings**
 
- 1. Indexing: grab a single character.
- 2. Slicing: grab a sub section of string.
+ - Indexing: grab a single character.
+ - Slicing: grab a sub section of string.
 
 **String properties and methods**
 
- 1. Addition:
+ - Addition:
  `x = 'Hello World'
  x = x + ' it is beautiful outside!'
  print(x)  // Hello World it is beautiful outside!`
 
-2. Multiplication:
+ - Multiplication:
 `letter = 'z'
 print(letter * 10) // zzzzzzzzzz`
 
-3. upper method:
+ - upper method:
  `x = 'Hello World'`
  `print(x.upper())`
 
-4. lower method:
+ - lower method:
 `x = 'Hello WORLD'`
 `print(x.lower())`
 
-5. split method:
+ - split method:
 `x = 'Hello World'`
 `print(x.split())`
 
@@ -96,3 +96,35 @@ Strings are not mutable! (meaning you can't use indexing to change individual el
 **2. How do I create comments in my code?**
 You can use the hashtag # to create comments in your code.
 
+**Print Formatting with Strings**
+ - Often you will want to "inject" a variable into your string for printing. For example:
+ `my_name = "Jose"
+ print("Hello " + my_name)`
+- There are multiple ways to format strings for printing variables in them.
+- This is known as string interpolation.
+- Let's explore two methods for this:
+	- **.format()** method
+	- **f-strings** (formatted strings literals)
+
+**Formatting with the .format() method**
+A good way to format objects into your strings for print statements is with the string .format() method. The syntax is:
+`'String here {} then also {}'.format('something1','something2')`
+
+Example:
+`print('This is a string {}'.format('INSERTED'))`
+`print('The {} {} {}'.format('fox', 'brown', 'quick'))`
+`print('The {2} {1} {0}'.format('fox', 'brown', 'quick'))`
+`print('The {q} {b} {f}'.format(f='fox', b='brown', q='quick'))`
+
+**Float formatting follows "{value:width.precision f}"**
+`result = 100/777`
+`print("The result was {r:1.3f}".format(r=result))`
+
+Here,
+	r - actual value to print.
+	width - spaces between string and value.
+	precision - decimal point count.
+
+**Formatting with the f-strings method**
+`result = 100/777`
+`print(f"The result was {result:1.3f}")`
