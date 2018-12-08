@@ -62,8 +62,8 @@ This has to do with floating point accuracy and computer's abilities to represen
 
 **Indexing and Slicing with Strings**
 
- 6. Indexing: grab a single character.
- 7. Slicing: grab a sub section of string.
+ 1. Indexing: grab a single character.
+ 2. Slicing: grab a sub section of string.
 
 **String properties and methods**
 
