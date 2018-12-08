@@ -53,3 +53,46 @@ This has to do with floating point accuracy and computer's abilities to represen
 |--|--|--|--|--|--|
 | index: | 0 | 1 | 2 | 3 | 4 |
 | reverse index: | 0 | -4 | -3 | -2 | -1 |
+
+ 1. Slicing allows you to grab a subsection of multiple characters, a "slice" of the string.
+ 2. `syntax: [start:stop:step]`
+ 3. **start** is numerical index for the slice start
+ 4. **stop** is the index you will go up to (but not include)
+ 5. **step** is the size of the "jump" you take.
+
+**Indexing and Slicing with Strings**
+
+ 6. Indexing: grab a single character.
+ 7. Slicing: grab a sub section of string.
+
+**String properties and methods**
+
+ 1. Addition:
+ `x = 'Hello World'
+ x = x + ' it is beautiful outside!'
+ print(x)  // Hello World it is beautiful outside!`
+
+2. Multiplication:
+`letter = 'z'
+print(letter * 10) // zzzzzzzzzz`
+
+3. upper method:
+ `x = 'Hello World'`
+ `print(x.upper())`
+
+4. lower method:
+`x = 'Hello WORLD'`
+`print(x.lower())`
+
+5. split method:
+`x = 'Hello World'`
+`print(x.split())`
+
+**Strings FAQ**
+
+**1. Are strings mutable?**
+Strings are not mutable! (meaning you can't use indexing to change individual elements of a string).
+
+**2. How do I create comments in my code?**
+You can use the hashtag # to create comments in your code.
+
