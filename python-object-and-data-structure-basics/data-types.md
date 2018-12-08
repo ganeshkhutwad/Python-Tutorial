@@ -49,8 +49,6 @@ This has to do with floating point accuracy and computer's abilities to represen
  - Indexing notation uses [] notation after the string.
  - Indexing allows you to grab a single character from the string.
 
-
-Character: 
 | character: | h | e | l | l | o |
 |--|--|--|--|--|--|
 | index: | 0 | 1 | 2 | 3 | 4 |
