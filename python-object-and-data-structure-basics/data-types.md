@@ -41,3 +41,17 @@ This has to do with floating point accuracy and computer's abilities to represen
  - This makes Python very flexible in assigning data types, this is different than other 	
     lanaguages that are **"Statically-Typed"**.
     
+**Introduction to Strings**
+
+ - Strings are sequences of characters, using the syntax of either single quotes or double quotes.
+ - `"hello" or 'hi'`
+ - Because strings are ordered sequences it means we can using indexing and slicing to grab sub-sections of the string.
+ - Indexing notation uses [] notation after the string.
+ - Indexing allows you to grab a single character from the string.
+
+
+Character: 
+| character: | h | e | l | l | o |
+|--|--|--|--|--|--|
+| index: | 0 | 1 | 2 | 3 | 4 |
+| reverse index: | 0 | -4 | -3 | -2 | -1 |
