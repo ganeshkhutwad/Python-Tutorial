@@ -129,3 +129,60 @@ Here,
 `result = 100/777`
 `print(f"The result was {result:1.3f}")`
 
+**Print Formatting FAQS**
+
+**1.) I imported print from the __future__ module, now print isn't working. What happened?**  
+
+This is because once you import from the __future__ module in Python 2.7, a print statement will no longer work, and print must then use a print() function. Meaning that you must use
+
+**print('Whatever you were going to print')**
+
+or if you are using some formatting:
+
+**print('This is a string with an {p}'.format(p='insert'****))**
+
+The __future__ module allows you to use Python3 functionality in a Python2 environment, but some functionality is overwritten (such as the print statement, or classic division when you import division).
+
+Since we are using Jupyter Notebooks, once you so the import, all cells will require the use if the print() function. You will have to restart Python or start a new notebook to regain the old functionality back.
+
+**HERE IS AN AWESOME SOURCE FOR PRINT FORMATTING:**
+[https://pyformat.info/](https://pyformat.info/)
+
+**LISTS IN PYTHON**
+
+ - Lists are ordered sequences that can hold a variety of object types.
+ - They use [] brackets and commas to separate objects in the list.
+	 - [1,2,3,4,5]
+ - List support indexing and slicing. Lists can be nested and also have a variety of useful methods that can be called off of them.
+ - Examples:
+ `my_list = [1, 2, 3]`
+ `my_list = ['Y', 100, 23.2]`
+ `print(len(my_list))`
+ `print(my_list[0])`
+ `print(my_list[1:])`
+
+**Concatenate a List**
+`my_list = ["one", "two"]`
+`another_list = ["three", "four"]`
+`new_list = my_list + another_list`
+`print(new_list) // ["one", "two", "three", "four"]`
+
+**Lists FAQ**
+
+**1. How do I index a nested list? For example if I want to grab 2 from [1,1,[1,2]]?**
+You would just add another set of brackets for indexing the nested list, for example: my_list[2][1] . We'll discover later on more nested objects and you will be quizzed on them later!
+
+**DICTIONARIES IN PYTHON**
+- Dictionaries use curly braces and colons to signify the keys and their associated values.
+`{"key1":"value1", "key2":"value2"}`
+- So when to choose a list and when to choose a dictionary?
+
+**Dictionaries:** Objects retrieved by key name. Unordered and can not be sorted.
+**Lists:** Objects retrieved by location. Ordered sequence can be indexed or sliced.
+
+**Dictionaries FAQ**
+
+**1. Do dictionaries keep an order? How do I print the values of the dictionary in order?**
+Dictionaries are mappings and do not retain order! If you do want the capabilities of a dictionary but you would like ordering as well, check out the  **ordereddict**  object lecture later on in the course!
+
+**TUPLES WITH PYTHON**
