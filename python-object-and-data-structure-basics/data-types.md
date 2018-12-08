@@ -128,3 +128,4 @@ Here,
 **Formatting with the f-strings method**
 `result = 100/777`
 `print(f"The result was {result:1.3f}")`
+
